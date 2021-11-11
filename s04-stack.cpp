@@ -58,7 +58,12 @@ auto main(int argc, char* argv[]) -> int {
         }
     }
 
-    std::cout << "OK";
+    //sprawdz czy na pewno wszystkie nawiasy sie usunely
+    if(!stackOfBrackets.empty()){
+        std::cout << "ERROR";
+    } else {
+        std::cout << "OK";
+    }
 
     return 0;
 }
