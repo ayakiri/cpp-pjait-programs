@@ -23,8 +23,13 @@ auto rectangle::area() const -> float {
 auto rectangle::draw() const -> void {
     for(int i = 1; i <= y; i++){
         //jeden rzad o szerokosci x
-        for (int i = 1; i <= x; i++){
-            std::cout << "*";
+        for (int i = 1; i <= x; i++){   
+            //sprawdz czy linia jest w srodku czy na skraju
+            if(i == 1 || i == x || j == 1 || j == y){
+                std::cout << "*";
+            } else {
+                std::cout << " ";
+            }
         }
         std::cout << "\n";
     }
