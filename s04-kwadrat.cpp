@@ -21,7 +21,7 @@ auto rectangle::area() const -> float {
 
 //funkcja rysujaca prostokat
 auto rectangle::draw() const -> void {
-    for(int i = 1; i <= y; i++){
+    for(int j = 1; j <= y; j++){
         //jeden rzad o szerokosci x
         for (int i = 1; i <= x; i++){   
             //sprawdz czy linia jest w srodku czy na skraju
