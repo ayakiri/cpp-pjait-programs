@@ -47,10 +47,10 @@ int main (int argc, char* argv[]) {
 
     //pzrypisz skalowanie, jesli podano
     if(argv[3]){
-        newRectangle.scale_x = std::stoi(argv[3]);
+        newRectangle.scale_x = std::stof(argv[3]);
 
         if (argv[4]){
-            newRectangle.scale_y = std::stoi(argv[4]);
+            newRectangle.scale_y = std::stof(argv[4]);
         }
     }
 
