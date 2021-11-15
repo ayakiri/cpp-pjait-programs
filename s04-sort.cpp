@@ -16,5 +16,5 @@ auto compareElements(int a[], int n) -> void {
 }
 
 auto fpsort(void* a[], size_t n, int (*fp)(void*, void*)) -> void {
-    (*fp)(a, size_t n);
+    (*fp)(a, n);
 }
